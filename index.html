@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Task Analyzer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Smart Task Analyzer:</h1>
+    <div class="container">
+        <h2>Add Tasks</h2>
+        <textarea name="" id="taskInput" placeholder="Paste JSON tasks here..."></textarea>
+        <label >Select Strategy:</label>
+        <select  id="strategy">
+            <option value="smart">Smart Balance</option>
+            <option value="fast">Fastest Wins</option>
+            <option value="impact">High Impact</option>
+            <option value="deadline">Deadline Driven</option>
+        </select>
+
+        <button onclick="analyze()">Analyze Tasks</button>
+
+        <h2>Results</h2>
+        <div id="output"></div>
+    </div>
+    <script src="script.js"></script>
+    
+</body>
+</html>
